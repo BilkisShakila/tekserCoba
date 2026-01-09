@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="container py-4">
+  <%- include('partials/navbar') %>
+  <h2><%= title %></h2>
+
+  <% if (!mood) { %>
+    <form method="post" action="/moods">
+      <%- include('partials/form', { mood: null, users }) %>
+      <button class="btn btn-success">Simpan</button>
+    </form>
+  <% } else { %>
+    <form method="post" action="/moods/<%= mood.mood_id %>">
+      <%- include('partials/form', { mood, users: null }) %>
+      <button class="btn btn-primary">Update</button>
+    </form>
+  <% } %>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "mindcare",
+  "version": "1.0.0",
+  "description": "MindCare - Mood tracking and mental health tips",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7"
+  }
+}

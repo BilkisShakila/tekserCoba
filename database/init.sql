@@ -22,8 +22,8 @@ CREATE TABLE IF NOT EXISTS moods (
 
 -- Data dummy awal untuk users
 INSERT INTO users (name, email, password) VALUES
-('Bilkis Aqilatusshakila', 'bilkis@example.com', 'hashed_password'),
-('Rossa Kayla Isma Aziz', 'rossa@example.com', 'hashed_password');
+('Bilkis Aqilatusshakila', 'raraa@example.com', 'rara123'),
+('Rossa Kayla Isma Aziz', 'rossa@example.com', 'rara123');
 
 -- Data dummy awal untuk moods
 INSERT INTO moods (user_id, date, mood_level, notes) VALUES
